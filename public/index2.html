@@ -1,17 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./public/css/base-tailwind.css">
+    <link rel="stylesheet" href="css/base-tailwind.css">
+    <link rel="stylesheet" href="css/support.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <meta charset="UTF-8">
     <title>PT. Mahardika Solusi Teknologi</title>
 </head>
 <body>
+<div class="max-w-screen-2xl mx-auto">
+    <nav class="flex flex-grow-0 w-full h-16">
+        <div class="flex-1 lg:w-1/3 my-auto lg:pl-10 pl-5 flex lg:flex-none">
+            <img class="lg:mx-auto w-full sm:w-1/2 object-contain" src="images/logo.svg">
+        </div>
 
-<div class="">
+        <div class="flex-1 lg:hidden block lg:w-1/3 my-auto pr-5">
+            <img id="navbutton" onclick="openNav()" class="cursor-pointer float-right lg:mx-auto w-1/6 sm:w-1/12 object-contain" src="images/burger.svg">
+        </div>
+        <div class="hidden lg:block flex-1 my-auto mr-auto">
+            <ul class="flex mx-auto pl-44 pr-24">
+                <a href="#"  class="mx-auto text-right font-medium font-mahardika">
+                    <li>Home</li>
+                </a>
+                <a href="#"  class="mx-auto text-right font-medium font-mahardika">
+                    <li>About</li>
+                </a>
+                <a href="#"  class="mx-auto text-right font-medium font-mahardika">
+                    <li>Team</li>
+                </a>
+                <a href="#"  class="mx-auto text-right font-medium font-mahardika">
+                    <li>Service</li>
+                </a>
+                <a href="#"  class="mx-auto text-right font-medium font-mahardika">
+                    <li>Work</li>
+                </a>
+                <a href="#"  class="mx-auto text-right font-medium font-mahardika">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+<!--    mobile nav-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="mt-4 mr-3" onclick="closeNav()">
+            <img class="cursor-pointer float-right lg:mx-auto w-1/12 object-contain" src="images/burger-white.svg">
+        </a>
+        <div class="overlay-content">
+            <a href="#" class="ml-10">Home</a>
+            <a href="#" class="ml-10">About</a>
+            <a href="#" class="ml-10">Team</a>
+            <a href="#" class="ml-10">Service</a>
+            <a href="#" class="ml-10">Work</a>
+            <a href="#" class="ml-10">Contact</a>
+        </div>
+    </div>
+
+
+<!--    head-->
+    <div class="autoplay w-full h-screen">
+        <div class="w-full relative">
+            <img class="z-10 absolute w-full object-cover" src="images/header1.png">
+            <div class="absolute w-1/2 z-20">
+                <p class="text-5xl text-white pt-44 pl-32">Lorem ipsum dolor sit amet consectetuer</p>
+                <p class="text-xl text-white pt-8 pl-32">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                <button class="uppercase py-3 px-5 button-orange ml-32 mt-10 text-white">Lorem ipsum</button>
+            </div>
+        </div>
+
+        <div>
+            <img class="w-full object-cover" src="images/header1.png">
+        </div>
+
+        <div>
+            <img class="w-full object-cover" src="images/header1.png">
+        </div>
+
+        <div>
+            <img class="w-full object-cover" src="images/header1.png">
+        </div>
+
+    </div>
+
+
+
+
+
 
 </div>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+    $('.autoplay').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 
+    function openNav() {
+        document.getElementById("myNav").style.height= "100%";
+        document.getElementById("navbutton").style.display = "none";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.height= "0%";
+        document.getElementById("navbutton").style.display = "block";
+    }
 
+</script>
 </body>
 </html>
