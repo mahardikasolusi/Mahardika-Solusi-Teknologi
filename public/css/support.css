@@ -2,12 +2,25 @@
 
 * {
     outline: none;
+    color:#333333;
 }
 
 .font-mahardika:hover {
     color:#0498A9;
 }
 .button-orange{
+    background: #FF7A03;
+}
+
+.button-green{
+    background: #0498A9;
+}
+
+.teal{
+    color:#0AABBD;
+}
+
+.orange{
     background: #FF7A03;
 }
 
