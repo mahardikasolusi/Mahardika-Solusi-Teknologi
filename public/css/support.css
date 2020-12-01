@@ -1,9 +1,12 @@
-@import "base-tailwind.css";
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 * {
     outline: none;
     color:#333333;
+    font-family: 'Lato', sans-serif;
 }
+.button:focus {outline:0;}
 
 .font-mahardika:hover {
     color:#0498A9;
