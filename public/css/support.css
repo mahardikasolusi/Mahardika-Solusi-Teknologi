@@ -8,6 +8,9 @@
 .font-mahardika:hover {
     color:#0498A9;
 }
+.font-mahardika-gray{
+    color:#999999;
+}
 .button-orange{
     background: #FF7A03;
 }
@@ -86,4 +89,9 @@
         top: 15px;
         right: 35px;
     }
+}
+
+div.kotak-team{
+    background: white;
+    box-shadow: 4px 4px 30px rgba(4, 155, 169, 0.1);
 }
