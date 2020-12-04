@@ -23,7 +23,8 @@
             </div>
 
             <div class="flex-1 lg:hidden block lg:w-1/3 my-auto pr-5">
-                <img id="navbutton" onclick="openNav()" class="cursor-pointer float-right lg:mx-auto w-1/6 sm:w-1/12 object-contain" src="images/burger.svg">
+                <img id="navbuttonOpen" onclick="openNav()" class="cursor-pointer float-right lg:mx-auto w-1/6 sm:w-1/12 object-contain" style="display: block" src="images/burger.svg">
+                <img id="navbuttonClose" onclick="closeNav()" class="cursor-pointer float-right lg:mx-auto w-1/6 sm:w-1/12 object-contain" style="display: none" src="images/burger.svg">
             </div>
             <div class="hidden lg:block flex-1 my-auto mr-auto">
                 <ul class="text-white flex mx-auto pl-44 pr-24">
@@ -528,11 +529,13 @@
 
         function openNav() {
             document.getElementById("myNav").style.height= "100%";
-            document.getElementById("navbutton").style.display = "none";
+            document.getElementById("navbuttonClose").style.display = "block";
+            document.getElementById("navbuttonOpen").style.display = "none";
         }
         function closeNav() {
             document.getElementById("myNav").style.height= "0%";
-            document.getElementById("navbutton").style.display = "block";
+            document.getElementById("navbuttonClose").style.display = "none";
+            document.getElementById("navbuttonOpen").style.display = "block";
         }
 
         $('a').click(function(){
