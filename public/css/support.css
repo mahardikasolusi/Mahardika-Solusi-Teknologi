@@ -53,9 +53,11 @@
 
 .overlay-content {
     position: relative;
-    top: 5%;
+    top: 15%;
     width: 100%;
-    text-align: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
 }
 
@@ -73,7 +75,9 @@
 
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: white;
+    text-underline: white;
+    text-underline-offset: 20px;
 }
 
 
