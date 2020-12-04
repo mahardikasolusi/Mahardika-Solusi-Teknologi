@@ -17,7 +17,7 @@
     </head>
     <body>
     <div class="max-w-screen-2xl mx-auto">
-        <nav class="flex flex-grow-0 w-full h-16">
+        <nav id="navigation" class="bg-white navbar-fixed-top fixed flex flex-grow-0 w-full h-16 z-50 ">
             <div class="flex-1 lg:w-1/3 my-auto lg:pl-10 pl-5 flex lg:flex-none">
                 <img class="lg:mx-auto w-full sm:w-1/2 object-contain" src="images/logo.svg">
             </div>
@@ -26,24 +26,24 @@
                 <img id="navbutton" onclick="openNav()" class="cursor-pointer float-right lg:mx-auto w-1/6 sm:w-1/12 object-contain" src="images/burger.svg">
             </div>
             <div class="hidden lg:block flex-1 my-auto mr-auto">
-                <ul class="flex mx-auto pl-44 pr-24">
-                    <a href="#"  class="mx-auto text-right font-medium font-mahardika">
-                        <li>Home</li>
+                <ul class="text-white flex mx-auto pl-44 pr-24">
+                    <a href="#what-we-offer"  class=" mx-auto text-right font-medium ">
+                        <li class="">Home</li>
                     </a>
-                    <a href="#"  class="mx-auto text-right font-medium font-mahardika">
-                        <li>About</li>
+                    <a href="#about-us"  class=" mx-auto text-right font-medium ">
+                        <li class="">About</li>
                     </a>
-                    <a href="#"  class="mx-auto text-right font-medium font-mahardika">
-                        <li>Team</li>
+                    <a href="#teams"  class=" mx-auto text-right font-medium ">
+                        <li class="">Team</li>
                     </a>
-                    <a href="#"  class="mx-auto text-right font-medium font-mahardika">
-                        <li>Service</li>
+                    <a href="#services"  class=" mx-auto text-right font-medium ">
+                        <li class="">Service</li>
                     </a>
-                    <a href="#"  class="mx-auto text-right font-medium font-mahardika">
-                        <li>Work</li>
+                    <a href="#what-we-offer"  class=" mx-auto text-right font-medium ">
+                        <li class="">Work</li>
                     </a>
-                    <a href="#"  class="mx-auto text-right font-medium font-mahardika">
-                        <li>Contact Us</li>
+                    <a href="#contact-us"  class=" mx-auto text-right font-medium ">
+                        <li class="">Contact Us</li>
                     </a>
                 </ul>
             </div>
@@ -55,18 +55,18 @@
                 <img class="cursor-pointer float-right lg:mx-auto w-1/12 object-contain" src="images/burger-white.svg">
             </a>
             <div class="overlay-content">
-                <a href="#" class="ml-10">Home</a>
-                <a href="#" class="ml-10">About</a>
-                <a href="#" class="ml-10">Team</a>
-                <a href="#" class="ml-10">Service</a>
-                <a href="#" class="ml-10">Work</a>
-                <a href="#" class="ml-10">Contact</a>
+                <a href="#what-we-offer" class="ml-10">Home</a>
+                <a href="#about-us" class="ml-10">About</a>
+                <a href="#teams" class="ml-10">Team</a>
+                <a href="#services" class="ml-10">Service</a>
+                <a href="#what-we-offer" class="ml-10">Work</a>
+                <a href="#contact-us" class="ml-10">Contact</a>
             </div>
         </div>
 
 
         <!--    head-->
-        <div class="autoplay w-full">
+        <div class="autoplay w-full pt-16">
             <div class="bg-cover bg-center justify-end pt-12 lg:pt-16 px-4 lg:px-32" style="background-image: url('images/header1.png');max-height:600px;height:100vw">
                 <div class="lg:w-1/2">
                     <div class="relative lg:mt-24 tracking-widest">
@@ -110,7 +110,7 @@
         </div>
 
         <!--konten 1-->
-        <div class="text-center text-2xl text-gray-700 font-medium lg:mt-20 mt-10">
+        <div id="what-we-offer" class="text-center text-2xl text-gray-700 font-medium lg:mt-20 mt-10">
             <h1>What We Offer</h1>
         </div>
 
@@ -142,7 +142,7 @@
         </div>
 
     <!--    konten 2-->
-        <div class="w-full lg:px-40 lg:py-24 mt-10 lg:mt-20 block lg:flex">
+        <div id="about-us" class="w-full lg:px-40 lg:py-24 mt-10 lg:mt-20 block lg:flex">
 
             <div class="lg:hidden block pt-5 pb-10 lg:pt-0 px-5 lg:px-0 lg:text-center">
                 <span class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase">About us</span>
@@ -153,7 +153,7 @@
                 <img src="images/konten2.png" class="mx-auto lg:object-cover object-center">
             </div>
             <div class="w-full lg:flex-1 my-auto pt-5 lg:pt-0 pl-5 lg:pl-10 pr-5 lg:pr-0">
-                <span class="hidden lg:block rounded-2xl lg:mx-0 px-5 p-0.5 text-white font-medium button-green uppercase">About Us</span>
+                <span class="hidden lg:block rounded-2xl lg:mx-0 w-32 text-center px-5 p-0.5 text-white font-medium button-green uppercase">About Us</span>
                 <p class="hidden lg:block font-medium text-xl lg:text-3xl mt-5 text-justify">A View Word About Us</p>
                 <p class="text-lg mt-5 text-justify">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                 <button class="outline-none uppercase py-2 px-4 lg:py-3 text-sm lg:px-4 border-2 mt-5 lg:mt-10">Lorem ipsum</button>
@@ -180,8 +180,8 @@
         </div>
 
         <!--konten 1-->
-        <div class="py-5 lg:py-0 px-5 lg:px-0 lg:text-center">
-            <span class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase">Team</span>
+        <div id="teams" class="py-5 lg:py-0 px-5 lg:px-0 lg:text-center">
+            <span class="rounded-2xl px-5 p-0.5 w-32 text-white font-medium button-green uppercase">Team</span>
             <h1 class="mt-5 text-2xl text-gray-700 font-medium">Meet Our Team</h1>
         </div>
 
@@ -277,7 +277,7 @@
         </div>
 
     <!--konten2-->
-        <div class="text-center mt-32">
+        <div id="activity" class="text-center mt-32">
             <h1 class="mt-5 text-2xl text-gray-700 font-medium">Our Activity</h1>
         </div>
 
@@ -318,7 +318,7 @@
             </div>
         </div>
 
-        <div class="w-full bg-gray-100 py-10 lg:py-20">
+        <div id="services" class="w-full bg-gray-100 py-10 lg:py-20">
             <div class="mx-5 lg:mx-0 lg:text-center">
                 <span class="rounded-2xl px-5 p-0.5 py-1 text-white font-medium button-green">SERVICES</span>
                 <h1 class="mt-5 text-2xl text-gray-700 font-medium">What We Do</h1>
@@ -377,7 +377,7 @@
         </div>
 
 
-        <div class="w-full px-5 lg:px-40 lg:py-24 mt-10 lg:mt-20 lg:flex gap-x-10">
+        <div id="contact-us" class="w-full px-5 lg:px-40 lg:py-24 mt-10 lg:mt-20 lg:flex gap-x-10">
 
             <div class="lg:hidden block pt-5 pb-10 lg:pt-0 lg:px-0 lg:text-center">
                 <span class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase">contact us</span>
@@ -388,7 +388,7 @@
                 <img src="images/contact.png" class="mb-5 lg:mb-0 object-cover object-center w-full h-full">
             </div>
             <div class="lg:w-2/5 lg:mt-5">
-                <span class="lg:block hidden rounded-2xl px-5 p-0.5 text-white font-medium button-green">CONTACT US</span>
+                <span class="lg:block hidden rounded-2xl px-5 p-0.5 w-40 text-center text-white font-medium button-green">CONTACT US</span>
                 <p class="lg:block hidden font-medium text-xl lg:text-3xl mt-5 mb-5 text-justify">Get In Touch</p>
                 <input type="text" placeholder="Name" class="mb-4 w-full py-2 px-3 border-2 border-solid border-gray-300">
                 <input type="text" placeholder="E-mail" class="mb-4 w-full py-2 px-3 border-2 border-solid border-gray-300">
@@ -534,6 +534,20 @@
             document.getElementById("myNav").style.height= "0%";
             document.getElementById("navbutton").style.display = "block";
         }
+
+        $('a').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+            return false;
+        });
+
+        // $(function () {
+        //     $(document).scroll(function () {
+        //         var $nav = $(".navbar-fixed-top");
+        //         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        //     });
+        // });
 
     </script>
     </body>
