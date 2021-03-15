@@ -12,14 +12,11 @@
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^2.0.1"
   },
-
   "devDependencies": {},
   "scripts": {
     "tailwind-build": "postcss css/tailwind.css -o public/css/base-tailwind.css",
     "style": "postcss css/style.css -o public/css/style.css --watch"
   },
-
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mahardikasolusi/Mahardika-Solusi-Teknologi.git"
