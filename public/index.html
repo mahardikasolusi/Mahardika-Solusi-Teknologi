@@ -1,354 +1,527 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/base-tailwind.css">
-        <link rel="stylesheet" href="css/support.css">
-        <link rel="stylesheet" href="css/slick.css">
-        <link rel="stylesheet" href="css/slick-theme.css">
-        <meta charset="UTF-8">
-        <title>PT. Mahardika Solusi Teknologi</title>
-        <style>
-            html{
-                outline: none;
-                outline-width: 0px;
-                outline-color: white;
-            }
-        </style>
-        <link rel="apple-touch-icon" sizes="57x57" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="images/logo.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="images/logo.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="images/logo.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-        <link rel="manifest" href="images/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="images/logo.png">
-        <meta name="theme-color" content="">
-    </head>
-    <body>
-    <div class="max-w-screen-2xl mx-auto">
-        <nav id="navigation" class="max-w-screen-2xl bg-white navbar-fixed-top fixed flex flex-grow-0 w-full h-16 z-50 ">
-            <div class="flex-1 lg:w-1/3 my-auto pl-10 flex lg:flex-none">
-                <img class="lg:mx-auto w-full sm:w-1/2 object-contain p-2" src="images/logo.svg">
-            </div>
-
-            <div class="flex-1 lg:hidden block lg:w-1/3 my-auto pr-5">
-                <img id="navbuttonOpen" onclick="openNav()" class="cursor-pointer float-right lg:mx-auto w-1/6 sm:w-1/12 object-contain" style="display: block" src="images/burger.svg">
-                <img id="navbuttonClose" onclick="closeNav()" class="cursor-pointer float-right lg:mx-auto w-1/6 sm:w-1/12 object-contain" style="display: none" src="images/burger.svg">
-            </div>
-            <div class="hidden lg:block flex-1 my-auto flex">
-                <div class="flex justify-end space-x-3 mr-0 pr-10">
-                        <div class="w-32 text-center">
-                            <a href="#home"  class="hover:text-gray-500 transition duration-500 font-bold ">
-                            Home
-                         </a>
-                        </div>
-
-                        <div class="w-32 text-center">
-                            <a href="#about-us"  class="hover:text-gray-500 transition duration-500 font-bold ">
-                            About
-                            </a>
-                        </div>
-
-                        <div class="w-32 text-center">
-                            <a href="#what-we-offer"  class="hover:text-gray-500 transition duration-500 font-bold ">
-                            Services
-                            </a>
-                        </div>
-
-                       <div class="w-32 text-center">
-                           <a href="#contact-us"  class="hover:text-gray-500 transition duration-500 font-bold ">
-                            Contact Us
-                           </a>
-                       </div>
-                </div>
-            </div>
-        </nav>
-
-        <!--    mobile nav-->
-        <div id="myNav" class="overlay">
-            <div class="overlay-content">
-                <a onclick="closeNav()" href="#what-we-offer" class="border-b w-1/2 mx-auto mt-10">Home</a>
-                <a onclick="closeNav()" href="#about-us" class="border-b w-1/2 mx-auto mt-10">About</a>
-<!--                <a onclick="closeNav()" href="#teams" class="border-b w-1/2 mx-auto mt-10">Team</a>-->
-                <a onclick="closeNav()" href="#services" class="border-b w-1/2 mx-auto mt-10">Service</a>
-<!--                <a onclick="closeNav()" href="#what-we-offer" class="border-b w-1/2 mx-auto mt-10">Work</a>-->
-                <a onclick="closeNav()" href="#contact-us" class="border-b w-1/2 mx-auto mt-10">Contact</a>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/base-tailwind.css" />
+    <link rel="stylesheet" href="css/support.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Mahardika Solusi Teknologi</title>
+    <style>
+      html {
+        outline: none;
+        outline-width: 0px;
+        outline-color: white;
+      }
+    </style>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="images/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png" />
+    <link rel="manifest" href="images/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="images/logo.png" />
+    <meta name="theme-color" content="" />
+  </head>
+  <body>
+    <div class="max-w-7xl mx-auto">
+      <nav
+        id="navigation"
+        class="max-w-7xl bg-white navbar-fixed-top fixed flex w-full h-16 z-50"
+      >
+        <div class="flex-1 lg:w-1/3 my-auto flex lg:flex-none">
+          <img class="lg:mx-auto md:w-2/5 lg:w-1/2 p-2" src="images/logo.svg" />
         </div>
 
-
-        <!--    head-->
-        <div id="home" class="autoplay w-full">
-<!--            Slider-->
-            <div class="bg-cover bg-left lg:bg-center justify-end mt-16 pt-5 lg:pt-16 px-4 lg:px-20" style="background-image: url('images/bgbg.png');max-height:600px;height:100vw">
-                <div class="lg:w-4/6">
-                    <div class="relative mt-16 lg:mt-48 tracking-widest">
-                        <p class="text-xl lg:text-5xl font-bold">We Understand You</p>
-
-                        <p class="text-sm lg:text-md pt-4 lg:pt-8">
-                            Our services cover all IT needs in many different fields, from micro
-                            <br>
-                            to enterprise scale. We provide solutions for complex challenges helping you
-                            <br>
-                            to create an innovative business software.
-                        </p>
-                        <p class="text-sm lg:text-md pt-4 lg:pt-8">
-                            Our dedicated team consist of experts who already having experiences
-                            <br>in various industry, with a skillset needed to support you.
-                        </p>
-                        <button class="outline-none uppercase py-2 px-4 lg:py-3 text-sm lg:px-4 button-orange mt-5 lg:mt-10 text-white hover:opacity-60 transition duration-500">Contact Us</button>
-                    </div>
-                </div>
+        <div class="flex-1 lg:hidden block lg:w-1/3 my-auto pr-5">
+          <img
+            id="navbuttonOpen"
+            onclick="openNav()"
+            class="cursor-pointer float-right lg:mx-auto w-8"
+            style="display: block"
+            src="images/burger.svg"
+          />
+          <img
+            id="navbuttonClose"
+            onclick="closeNav()"
+            class="cursor-pointer float-right lg:mx-auto w-8"
+            style="display: none"
+            src="images/burger.svg"
+          />
+        </div>
+        <div class="hidden lg:block flex-1 my-auto flex">
+          <div class="flex justify-end space-x-3 mr-0 pr-10">
+            <div class="w-32 text-center">
+              <a
+                href="#home"
+                class="hover:text-gray-500 transition duration-500 font-bold"
+              >
+                Home
+              </a>
             </div>
 
+            <div class="w-32 text-center">
+              <a
+                href="#about-us"
+                class="hover:text-gray-500 transition duration-500 font-bold"
+              >
+                About
+              </a>
+            </div>
 
+            <div class="w-32 text-center">
+              <a
+                href="#what-we-offer"
+                class="hover:text-gray-500 transition duration-500 font-bold"
+              >
+                Services
+              </a>
+            </div>
+
+            <div class="w-32 text-center">
+              <a
+                href="#contact-us"
+                class="hover:text-gray-500 transition duration-500 font-bold"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--    mobile nav-->
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a
+            onclick="closeNav()"
+            href="#what-we-offer"
+            class="border-b w-1/2 mx-auto mt-10"
+            >Home</a
+          >
+          <a
+            onclick="closeNav()"
+            href="#about-us"
+            class="border-b w-1/2 mx-auto mt-10"
+            >About</a
+          >
+          <!--                <a onclick="closeNav()" href="#teams" class="border-b w-1/2 mx-auto mt-10">Team</a>-->
+          <a
+            onclick="closeNav()"
+            href="#services"
+            class="border-b w-1/2 mx-auto mt-10"
+            >Service</a
+          >
+          <!--                <a onclick="closeNav()" href="#what-we-offer" class="border-b w-1/2 mx-auto mt-10">Work</a>-->
+          <a
+            onclick="closeNav()"
+            href="#contact-us"
+            class="border-b w-1/2 mx-auto mt-10"
+            >Contact</a
+          >
+        </div>
+      </div>
+
+      <!--    head-->
+      <div id="home" class="autoplay w-full">
+        <!--            Slider-->
+        <div
+          class="bg-cover bg-left lg:bg-center justify-end mt-16 pt-5 lg:pt-16 px-4 lg:px-20"
+          style="
+            background-image: url('images/bgbg.png');
+            max-height: 600px;
+            height: 100vw;
+          "
+        >
+          <div class="lg:w-4/6">
+            <div class="relative md:mt-48 tracking-widest">
+              <p class="text-xl lg:text-5xl font-bold">We Understand You</p>
+
+              <p class="text-sm lg:text-md pt-4 lg:pt-8 bg-gray-100 bg-opacity-50 px-2 md:bg-transparent md:px-0">
+                Our services cover all IT needs in many different fields, from
+                micro
+                <br />
+                to enterprise scale. We provide solutions for complex challenges
+                helping you
+                <br />
+                to create an innovative business software.
+              </p>
+              <p class="text-sm lg:text-md pt-4 pb-4 lg:pt-8 bg-gray-100 bg-opacity-50 px-2 md:bg-transparent md:px-0">
+                Our dedicated team consist of experts who already having
+                experiences
+                <br />in various industry, with a skillset needed to support
+                you.
+              </p>
+              <button
+                class="outline-none uppercase py-2 px-4 lg:py-3 text-sm lg:px-4 button-orange mt-2 lg:mt-10 text-white hover:opacity-60 transition duration-500"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--        section1-->
+      <div
+        id="what-we-offer"
+        class="text-center text-gray-700 font-medium lg:mt-20 mt-20"
+      >
+        <p class="text-3xl font-medium">What We Offer</p>
+      </div>
+
+      <div
+        class="lg:mt-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-10 px-5 lg:px-0 lg:mx-32"
+      >
+        <div
+          class="mt-10 lg:mt-0 bg-white shadow-lg lg:hover:shadow-xl py-8 px-10 mx-auto lg:m-auto h-auto md:h-96"
+        >
+          <div class="py-4">
+            <img src="images/iconpc.svg" alt="" />
+          </div>
+          <span class="teal font-medium uppercase">IT Project</span>
+          <div class="h-1 w-10 orange my-4"></div>
+          <div class="w-full">
+            Planning, design, implementation, project management, and training
+            which customized to your needs
+          </div>
+        </div>
+        <div
+          class="mt-10 lg:mt-0 bg-white shadow-lg lg:hover:shadow-xl py-8 px-10 mx-auto lg:m-auto h-auto md:h-96"
+        >
+          <div class="py-4">
+            <img src="images/iconpc.svg" alt="" />
+          </div>
+          <span class="teal font-medium uppercase"
+            >Outsourcing Partnership</span
+          >
+          <div class="h-1 w-10 orange my-4"></div>
+          <div class="w-full">
+            We provide you with our experts as your additional resources. Scale
+            up your team with us!
+          </div>
+        </div>
+        <div
+          class="mt-10 lg:mt-0 bg-white shadow-lg lg:hover:shadow-xl py-8 px-10 mx-auto lg:m-auto h-auto md:h-96"
+        >
+          <div class="py-4">
+            <img src="images/iconpc.svg" alt="" />
+          </div>
+          <span class="teal font-medium uppercase">Training Event</span>
+          <div class="h-1 w-10 orange my-4"></div>
+          <div class="w-full">Grow, improve and maximize your potential.</div>
+        </div>
+      </div>
+
+      <!--    section 2-->
+      <div
+        id="about-us"
+        class="px-5 w-full lg:px-40 lg:py-24 lg:mt-20 mt-20 block lg:flex"
+      >
+        <div
+          class="lg:hidden block pt-5 pb-10 lg:pt-0 px-5 lg:px-0 text-center"
+        >
+          <span
+            class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase"
+            >About us</span
+          >
+          <p class="mt-3 lg:mt-5 text-2xl text-gray-700 font-medium">
+            A View Word About Us
+          </p>
         </div>
 
-<!--        section1-->
-        <div id="what-we-offer" class="text-center text-gray-700 font-medium lg:mt-20 mt-24">
-            <p class="text-3xl font-medium">What We Offer</p>
+        <div class="w-full lg:px-0 lg:flex-1">
+          <img
+            src="images/konten2.png"
+            class="mx-auto w-full lg:object-cover object-center"
+          />
+        </div>
+        <div class="w-full lg:flex-1 my-auto pt-5 lg:pt-0 lg:pl-10 lg:pr-0">
+          <span
+            class="hidden lg:block rounded-2xl lg:mx-0 w-32 text-center px-5 p-0.5 text-white font-medium button-green uppercase"
+            >About Us</span
+          >
+          <p
+            class="hidden lg:block font-medium text-xl lg:text-3xl mt-5 text-justify"
+          >
+            A View Word About Us
+          </p>
+          <p class="text-lg mt-5 text-justify">
+            PT.Mahardika Solusi Teknologi – a Professional IT Consultant and
+            Software Development Services in Indonesia.
+          </p>
+          <button
+            class="outline-none uppercase py-2 px-4 lg:py-3 text-sm lg:px-4 border-2 mt-5 lg:mt-10 hover:opacity-60 transition duration-500"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
 
+      <!--    konten 3-->
+      <div class="w-full px-5 py-10 mt-10 lg:mt-0 lg:px-40 lg:py-24 lg:flex">
+        <div class="flex-1 my-auto lg:pr-10">
+          <span
+            class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase"
+            >Our Vision</span
+          >
+          <p class="text-lg mt-5 lg:text-justify">
+            To become a leading IT company, that providing ideas, solutions and
+            innovation through technology
+          </p>
+          <p class="text-lg mt-5 lg:text-justify">
+            MST delivers ideas of IT Solutions to our clients from various
+            sector industries such as Project Development, IT Project,
+            Outsourcing Partnership and Training Event to achieve business goal.
+            We also provide our expertise to scale up your team to continuous
+            enhancements project.
+          </p>
         </div>
 
-        <div class="lg:mt-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-10 px-5 lg:px-0 lg:mx-32">
-            <div class="mt-10 lg:mt-0 bg-white shadow-lg lg:hover:shadow-xl py-8 px-10 mx-auto lg:m-auto h-auto md:h-96">
-                <div class="py-4">
-                    <img src="images/iconpc.svg" alt="">
-                </div>
-                <span class="teal font-medium uppercase">IT Project</span>
-                <div class="h-1 w-10 orange my-4"></div>
-                <div class="w-full ">
-                    Planning, design, implementation, project management, and training which customized to your needs
-                </div>
-            </div>
-            <div class="mt-10 lg:mt-0 bg-white shadow-lg lg:hover:shadow-xl py-8 px-10 mx-auto lg:m-auto h-auto md:h-96">
-                <div class="py-4">
-                    <img src="images/iconpc.svg" alt="">
-                </div>
-                <span class="teal font-medium uppercase">Outsourcing Partnership</span>
-                <div class="h-1 w-10 orange my-4"></div>
-                <div class="w-full ">
-                    We provide you with our experts as your additional resources. Scale up your team with us!
-                </div>
-            </div>
-            <div class="mt-10 lg:mt-0 bg-white shadow-lg lg:hover:shadow-xl py-8 px-10 mx-auto lg:m-auto h-auto md:h-96">
-                <div class="py-4">
-                    <img src="images/iconpc.svg" alt="">
-                </div>
-                <span class="teal font-medium uppercase">Training Event</span>
-                <div class="h-1 w-10 orange my-4"></div>
-                <div class="w-full ">
-                    Grow, improve and maximize your potential.
-                </div>
-            </div>
+        <div class="flex-1 mt-10 lg:mt-0">
+          <img
+            src="images/konten4.png"
+            class="w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <!--    konten 5-->
+      <div
+        class="w-full px-5 py-10 mt-10 lg:mt-0 lg:px-40 lg:py-24 flex flex-col flex-col-reverse lg:flex-row"
+      >
+        <div class="flex-1 mt-10 lg:mt-0">
+          <img
+            src="images/konten3.png"
+            class="w-full object-cover object-center"
+          />
         </div>
 
-    <!--    section 2-->
-        <div id="about-us" class="px-5 w-full lg:px-40 lg:py-24 lg:mt-20 mt-24 block lg:flex">
+        <div class="flex-1 my-auto lg:pl-10">
+          <span
+            class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase"
+            >Our Value</span
+          >
+          <p class="text-lg mt-5 lg:text-justify">
+            To become a leading IT company, that providing ideas, solutions and
+            innovation through technology
+          </p>
+          <p class="text-lg mt-5 lg:text-justify">
+            Consult and build all kind of software development for your
+            company's promotional, operational or your internal needs. Engage
+            with us and dig your requirements. We will help you through IT
+            solutions.
+          </p>
+        </div>
+      </div>
 
-            <div class="lg:hidden block pt-5 pb-10 lg:pt-0 px-5 lg:px-0 text-center">
-                <span class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase">About us</span>
-                <p class="mt-3 lg:mt-5 text-2xl text-gray-700 font-medium">A View Word About Us</p>
-            </div>
+      <!--        our expertise-->
+      <div id="our-expertise" class="w-full px-5 lg:my-20 my-10 lg:px-40 pb-20">
+        <div
+          class="text-center text-2xl text-gray-700 font-medium lg:mt-20 mt-10"
+        >
+          <p class="text-3xl">Our Expertise</p>
+        </div>
+        <div class="flex mt-10 lg:mt-20">
+          <div
+            class="grid grid-cols-2 gap-10 items-center mx-0 lg:grid-cols-5 lg:gap-20 px-5 lg:px-0 lg:mx-auto"
+          >
+            <img src="./images/expertise/1.svg" />
+            <img src="./images/expertise/2.svg" />
+            <img class="" src="./images/expertise/3.svg" />
+            <img src="./images/expertise/4.svg" />
+            <img src="./images/expertise/5.svg" />
+            <img src="./images/expertise/6.svg" />
+            <img src="./images/expertise/7.svg" />
+            <img src="./images/expertise/8.svg" />
+            <img src="./images/expertise/9.svg" />
+            <img src="./images/expertise/10.svg" />
+            <img src="./images/expertise/11.svg" />
+            <img src="./images/expertise/12.svg" />
+            <img src="./images/expertise/13.svg" />
+            <img src="./images/expertise/14.svg" />
+            <img src="./images/expertise/15.svg" />
+            <img src="./images/expertise/16.svg" />
+            <img src="./images/expertise/17.svg" />
+            <img src="./images/expertise/18.svg" />
+            <img src="./images/expertise/19.svg" />
+            <img src="./images/expertise/20.svg" />
+            <img src="./images/expertise/21.svg" />
+            <img src="./images/expertise/22.svg" />
+            <img src="./images/expertise/23.svg" />
+          </div>
+        </div>
+      </div>
 
-            <div class="w-full lg:px-0 lg:flex-1">
-                <img src="images/konten2.png" class="mx-auto w-full lg:object-cover object-center">
-            </div>
-            <div class="w-full lg:flex-1 my-auto  pt-5 lg:pt-0 lg:pl-10 lg:pr-0">
-                <span class="hidden lg:block rounded-2xl lg:mx-0 w-32 text-center px-5 p-0.5 text-white font-medium button-green uppercase">About Us</span>
-                <p class="hidden lg:block font-medium text-xl lg:text-3xl mt-5 text-justify">A View Word About Us</p>
-                <p class="text-lg mt-5 text-justify">
-                    PT.Mahardika Solusi Teknologi – a Professional IT Consultant and Software Development Services  in Indonesia.
-                </p>
-                <button class="outline-none uppercase py-2 px-4 lg:py-3 text-sm lg:px-4 border-2 mt-5 lg:mt-10 hover:opacity-60 transition duration-500">Contact Us</button>
-            </div>
+      <!--        our client-->
+      <div id="our-client" class="w-full px-5 lg:my-20 my-24 lg:px-40 pb-20">
+        <div
+          class="text-center text-2xl text-gray-700 font-medium lg:mt-20 mt-10"
+        >
+          <p class="text-3xl">Our Awesome Clients</p>
+        </div>
+        <div class="flex mt-10 lg:mt-20">
+          <div
+            class="grid grid-cols-2 gap-10 lg:grid-cols-4 lg:gap-20 px-5 lg:px-0 lg:mx-auto"
+          >
+            <img src="images/client/1.svg" />
+            <img src="images/client/2.svg" />
+            <img src="images/client/3.svg" />
+            <img src="images/client/4.svg" />
+            <img src="images/client/5.svg" />
+            <img src="images/client/6.svg" />
+            <img src="images/client/7.svg" />
+            <img src="images/client/8.svg" />
+            <img src="images/client/9.svg" />
+            <img src="images/client/10.svg" />
+            <img src="images/client/11.svg" />
+            <img src="images/client/12.svg" />
+            <img src="images/client/13.svg" />
+            <img src="images/client/14.svg" />
+            <img src="images/client/15.svg" />
+            <img src="images/client/16.svg" />
+            <img src="images/client/17.svg" />
+            <img src="images/client/18.svg" />
+            <img src="images/client/19.svg" />
+            <img src="images/client/20.svg" />
+            <img src="images/client/21.svg" />
+            <img src="images/client/22.svg" />
+            <img src="images/client/23.svg" />
+            <img src="images/client/24.svg" />
+            <img src="images/client/25.svg" />
+            <img src="images/client/26.svg" />
+            <img src="images/client/27.svg" />
+          </div>
+        </div>
+      </div>
 
+      <div
+        id="contact-us"
+        class="w-full px-5 lg:px-40 lg:py-24 mt-10 lg:mt-20 lg:flex gap-x-10"
+      >
+        <div class="lg:hidden block pt-5 pb-10 lg:pt-0 lg:px-0 text-center">
+          <span
+            class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase"
+            >contact us</span
+          >
+          <p class="mt-3 lg:mt-5 text-2xl text-gray-700 font-medium">
+            Get In Touch
+          </p>
         </div>
 
-        <!--    konten 3-->
-        <div class="w-full px-5 py-10 mt-10 lg:mt-0 lg:px-40 lg:py-24 lg:flex">
-            <div class="flex-1 my-auto lg:pr-10">
-                <span class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase">Our Vision</span>
-                <p class="text-lg mt-5 lg:text-justify">
-                    To become a leading IT company, that providing ideas, solutions and innovation through technology
-                </p>
-                <p class="text-lg mt-5 lg:text-justify">
-                    MST delivers ideas of IT Solutions to our clients from various sector industries such as Project Development, IT Project, Outsourcing Partnership and Training Event to achieve business goal.
-                    We also provide our expertise to scale up your team to continuous enhancements project.
-                </p>
-            </div>
-
-            <div class="flex-1 mt-10 lg:mt-0">
-                <img src="images/konten4.png" class="w-full object-cover object-center">
-            </div>
-
+        <div class="flex-1">
+          <img
+            src="images/contact.png"
+            class="mb-5 lg:mb-0 object-cover object-center w-full h-full"
+          />
         </div>
-
-        <!--    konten 5-->
-        <div class="w-full px-5 py-10 mt-10 lg:mt-0 lg:px-40 lg:py-24 flex flex-col flex-col-reverse lg:flex-row">
-            <div class="flex-1 mt-10 lg:mt-0 ">
-                <img src="images/konten3.png" class="w-full object-cover object-center">
-            </div>
-
-            <div class="flex-1 my-auto lg:pl-10">
-                <span class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase">Our Value</span>
-                <p class="text-lg mt-5 lg:text-justify">
-                    To become a leading IT company, that providing ideas, solutions and innovation through technology
-                </p>
-                <p class="text-lg mt-5 lg:text-justify">
-                    Consult and build all kind of software development for your company's promotional, operational or your internal needs.
-                    Engage with us and dig your requirements.
-                    We will help you through IT solutions.
-                </p>
-            </div>
+        <div class="lg:w-2/5 lg:mt-5">
+          <span
+            class="lg:block hidden rounded-2xl px-5 p-0.5 w-40 text-center text-white font-medium button-green"
+            >CONTACT US</span
+          >
+          <p
+            class="lg:block hidden font-medium text-xl lg:text-3xl mt-5 mb-5 text-justify"
+          >
+            Get In Touch
+          </p>
+          <input
+            type="text"
+            placeholder="Name"
+            class="mb-4 w-full py-2 px-3 border-2 border-solid border-gray-300"
+          />
+          <input
+            type="text"
+            placeholder="E-mail"
+            class="mb-4 w-full py-2 px-3 border-2 border-solid border-gray-300"
+          />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="3"
+            placeholder="Message"
+            class="mb-5 lg:mb-8 w-full py-2 px-3 border-2 border-solid border-gray-300"
+          ></textarea>
+          <button
+            class="outline-none block uppercase py-2 px-4 lg:py-3 text-sm text-white lg:px-10 border-2 orange hover:opacity-60 transition duration-500"
+          >
+            Submit
+          </button>
         </div>
+      </div>
 
-<!--        our expertise-->
-        <div  id="our-expertise" class="w-full px-5 lg:my-20 my-10 lg:px-40 pb-20">
-            <div class="text-center text-2xl text-gray-700 font-medium lg:mt-20 mt-10">
-                <p class="text-3xl">Our Expertise</p>
-            </div>
-            <div class="flex mt-10 lg:mt-20">
-                <div class="grid grid-cols-2 gap-10 items-center mx-0 lg:grid-cols-5 lg:gap-20 px-5 lg:px-0 lg:mx-auto">
-                    <img src="./images/expertise/1.svg">
-                    <img src="./images/expertise/2.svg">
-                    <img class="" src="./images/expertise/3.svg">
-                    <img src="./images/expertise/4.svg">
-                    <img src="./images/expertise/5.svg">
-                    <img src="./images/expertise/6.svg">
-                    <img src="./images/expertise/7.svg">
-                    <img src="./images/expertise/8.svg">
-                    <img src="./images/expertise/9.svg">
-                    <img src="./images/expertise/10.svg">
-                    <img src="./images/expertise/11.svg">
-                    <img src="./images/expertise/12.svg">
-                    <img src="./images/expertise/13.svg">
-                    <img src="./images/expertise/14.svg">
-                    <img src="./images/expertise/15.svg">
-                    <img src="./images/expertise/16.svg">
-                    <img src="./images/expertise/17.svg">
-                    <img src="./images/expertise/18.svg">
-                    <img src="./images/expertise/19.svg">
-                    <img src="./images/expertise/20.svg">
-                    <img class="col-start-2" src="./images/expertise/21.svg">
-                    <img src="./images/expertise/22.svg">
-                    <img src="./images/expertise/23.svg">
+      <footer class="mt-20 lg:mt-10">
+        <div class="px-5 lg:px-20 mb-5 lg:mb-10 lg:flex">
+          <div class="font-light lg:w-1/3 mb-5 lg:mb-0">
+            <img
+              src="images/logo.svg"
+              alt="MAHARDIKA SOLUTION"
+              class="w-56 mb-3"
+            />
+            <p class="">
+              a Professional IT Consultant and Software Development Services in
+              Indonesia.
+            </p>
+          </div>
 
-                </div>
+          <div class="lg:w-1/5 lg:ml-10 mb-3 lg:mb-0">
+            <p class="mb-0.5 lg:mb-3 font-medium text-gray-700">LOCATION</p>
+            <p>
+              Jl. Kuta Kencana Utara No.17, Mekarwangi, Kec. Bojongloa Kidul,
+              Kota Bandung, Jawa Barat 40236
+            </p>
+          </div>
+
+          <div class="lg:w-1/4 lg:ml-5 mb-3 lg:mb-0">
+            <p class="mb-0.5 lg:mb-3 font-medium text-gray-700">CONTACTS</p>
+            <p><strong>Email </strong>: marketing@mahardikasolusi.co.id</p>
+            <p><strong>Telephone</strong> +62 857 9596 2340</p>
+          </div>
+
+          <div class="lg:flex-1 lg:ml-10 mb-3 lg:mb-0">
+            <p class="mb-3 font-medium text-gray-700">FOLLOW</p>
+            <div class="flex pb-3 lg:pb-5">
+              <img class="mr-5" src="images/linkedid2.svg" />
+              <img class="mr-5" src="images/facebook2.svg" />
+              <img class="" src="images/linkedin2.svg" />
             </div>
+          </div>
         </div>
-
-        <!--        our client-->
-        <div  id="our-client" class="w-full px-5 lg:my-20 my-24 lg:px-40 pb-20">
-            <div class="text-center text-2xl text-gray-700 font-medium lg:mt-20 mt-10">
-                <p class="text-3xl">Our Awesome Clients</p>
-            </div>
-            <div class="flex mt-10 lg:mt-20">
-                <div class="grid grid-cols-2 gap-10 lg:grid-cols-4 lg:gap-20 px-5 lg:px-0 lg:mx-auto">
-                    <img src="images/client/1.svg">
-                    <img src="images/client/2.svg">
-                    <img src="images/client/3.svg">
-                    <img src="images/client/4.svg">
-                    <img src="images/client/5.svg">
-                    <img src="images/client/6.svg">
-                    <img src="images/client/7.svg">
-                    <img src="images/client/8.svg">
-                    <img src="images/client/9.svg">
-                    <img src="images/client/10.svg">
-                    <img src="images/client/11.svg">
-                    <img src="images/client/12.svg">
-                    <img src="images/client/13.svg">
-                    <img src="images/client/14.svg">
-                    <img src="images/client/15.svg">
-                    <img src="images/client/16.svg">
-                    <img src="images/client/17.svg">
-                    <img src="images/client/18.svg">
-                    <img src="images/client/19.svg">
-                    <img src="images/client/20.svg">
-                    <img src="images/client/21.svg">
-                    <img src="images/client/22.svg">
-                    <img src="images/client/23.svg">
-                    <img src="images/client/24.svg">
-                    <img src="images/client/25.svg">
-                    <img src="images/client/26.svg">
-                    <img src="images/client/27.svg">
-
-                </div>
-            </div>
+        <!-- Right -->
+        <div class="mx-5 lg:mx-40 bg-white border-t">
+          <div
+            class="text-center py-8 font-semibold leading-6 space-y-4 sm:text-lg sm:leading-7"
+          >
+            <p>
+              Copyright © 2020 PT. Mahardika Solusi Teknologi . All rights
+              reserved.
+            </p>
+          </div>
         </div>
-
-
-        <div id="contact-us" class="w-full px-5 lg:px-40 lg:py-24 mt-10 lg:mt-20 lg:flex gap-x-10">
-
-            <div class="lg:hidden block pt-5 pb-10 lg:pt-0 lg:px-0 text-center">
-                <span class="rounded-2xl px-5 p-0.5 text-white font-medium button-green uppercase">contact us</span>
-                <p class="mt-3 lg:mt-5 text-2xl text-gray-700 font-medium">Get In Touch</p>
-            </div>
-
-            <div class="flex-1">
-                <img src="images/contact.png" class="mb-5 lg:mb-0 object-cover object-center w-full h-full">
-            </div>
-            <div class="lg:w-2/5 lg:mt-5">
-                <span class="lg:block hidden rounded-2xl px-5 p-0.5 w-40 text-center text-white font-medium button-green">CONTACT US</span>
-                <p class="lg:block hidden font-medium text-xl lg:text-3xl mt-5 mb-5 text-justify">Get In Touch</p>
-                <input type="text" placeholder="Name" class="mb-4 w-full py-2 px-3 border-2 border-solid border-gray-300">
-                <input type="text" placeholder="E-mail" class="mb-4 w-full py-2 px-3 border-2 border-solid border-gray-300">
-                <textarea name="" id="" cols="30" rows="3" placeholder="Message" class="mb-5 lg:mb-8 w-full py-2 px-3 border-2 border-solid border-gray-300"></textarea>
-                <button class="outline-none block uppercase py-2 px-4 lg:py-3 text-sm text-white lg:px-10 border-2 orange hover:opacity-60 transition duration-500">Submit</button>
-            </div>
-        </div>
-
-        <footer class="mt-20 lg:mt-10">
-            <div class="px-5 lg:px-20 mb-5 lg:mb-10 lg:flex">
-                <div class="font-light lg:w-1/3 mb-5 lg:mb-0">
-                    <img src="images/logo.svg" alt="MAHARDIKA SOLUTION" class="w-56 mb-3" >
-                    <p class="">
-                        a Professional IT Consultant and Software Development Services  in Indonesia.
-                    </p>
-                </div>
-
-                <div class="lg:w-1/5 lg:ml-10 mb-3 lg:mb-0">
-                    <p class="mb-0.5 lg:mb-3 font-medium text-gray-700">LOCATION</p>
-                    <p>Jl. Kuta Kencana Utara No.17, Mekarwangi, Kec. Bojongloa Kidul, Kota Bandung, Jawa Barat 40236</p>
-                </div>
-
-                <div class="lg:w-1/4 lg:ml-5 mb-3 lg:mb-0">
-                    <p class="mb-0.5 lg:mb-3 font-medium text-gray-700">CONTACTS</p>
-                    <p> <strong>Email </strong>: marketing@mahardikasolusi.co.id</p>
-                    <p> <strong>Telephone</strong> +62 857 9596 2340</p>
-                </div>
-
-                <div class="lg:flex-1 lg:ml-10 mb-3 lg:mb-0">
-                    <p class="mb-3 font-medium text-gray-700">FOLLOW</p>
-                    <div class="flex pb-3 lg:pb-5">
-                        <img class="mr-5" src="images/linkedid2.svg">
-                        <img class="mr-5" src="images/facebook2.svg">
-                        <img class="" src="images/linkedin2.svg">
-                    </div>
-                </div>
-            </div>
-            <!-- Right -->
-            <div class="mx-5 lg:mx-40 bg-white border-t">
-                <div class="text-center py-8 font-semibold leading-6 space-y-4 sm:text-lg sm:leading-7">
-                    <p>Copyright © 2020 PT. Mahardika Solusi Teknologi . All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-
+      </footer>
     </div>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/controller.js"></script>
-
-    </body>
-    </html>
+  </body>
+</html>
