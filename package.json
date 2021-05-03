@@ -1,21 +1,18 @@
 {
-  "name": "mahardika-solusi-teknologi",
+  "name": "Mahardika-Solusi-Teknologi",
   "version": "1.0.0",
   "description": "",
-  "main": "postcss.config.js",
+  "main": "index.js",
   "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "npm-watch": "^0.7.0",
-    "postcss": "^8.1.10",
-    "postcss-cli": "^8.3.0",
-    "postcss-import": "^13.0.0",
-    "slick-carousel": "^1.8.1",
-    "tailwindcss": "^2.0.1"
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
   },
   "devDependencies": {},
   "scripts": {
-    "tailwind-build": "postcss css/tailwind.css -o public/css/base-tailwind.css",
-    "style": "postcss css/style.css -o public/css/style.css --watch"
+    "build:css": "postcss css/tailwind.css -o public/assets/css/tailwind.css",
+    "watch:css": "postcss css/styles.css -o public/assets/css/styles.css --watch"
   },
   "repository": {
     "type": "git",
