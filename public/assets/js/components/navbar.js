@@ -1,4 +1,3 @@
-
 document.querySelector('header').innerHTML =
     `<nav id="navbar" class="flex items-center h-16 lg:h-20 text-white">
         <div class="flex items-center responsive">
@@ -31,3 +30,25 @@ document.querySelector('header').innerHTML =
             </div>
         </div>        
     </nav>`
+
+window.onscroll = function() {scrollFunction()};
+
+const navbar =  document.getElementById("navbar");
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        navbar.classList.add('bg-white');
+        navbar.classList.add('shadow-md');
+        navbar.classList.remove('text-white');
+    } else {
+        navbar.classList.remove('bg-white')
+        navbar.classList.remove('shadow-md');
+        navbar.classList.add('text-white')
+    }
+}
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
