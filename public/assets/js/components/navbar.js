@@ -3,7 +3,7 @@ document.querySelector('header').innerHTML =
         <div class="flex items-center responsive">
             <div class="">
                 <a href="#">
-                    <img class="h-8 lg:h-10" src="/public/assets/image/logo.svg" alt="">
+                    <img class="h-8 lg:h-10" src="./assets/image/logo.svg" alt="">
                 </a>
             </div>
             <div class="ml-auto">
