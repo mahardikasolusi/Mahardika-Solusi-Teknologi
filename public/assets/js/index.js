@@ -1,3 +1,25 @@
+window.onscroll = function() {scrollFunction()};
+
+const navbar =  document.getElementById("navbar");
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        navbar.classList.add('bg-white');
+        navbar.classList.add('shadow-md');
+        navbar.classList.remove('text-white');
+    } else {
+        navbar.classList.remove('bg-white')
+        navbar.classList.remove('shadow-md');
+        navbar.classList.add('text-white')
+    }
+}
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
 $(window).ready(function() {
     $('.single-item').slick();
     
