@@ -1,15 +1,22 @@
 window.onscroll = function() {scrollFunction()};
 
 const navbar =  document.getElementById("navbar");
+const navIcon1 =  document.getElementById("navIcon1");
+const navIcon2 =  document.getElementById("navIcon2");
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         navbar.classList.add('bg-white');
         navbar.classList.add('shadow-md');
         navbar.classList.remove('text-white');
+        navIcon1.classList.add('hidden')
+        navIcon2.classList.remove('hidden')
+        navIcon2.classList.add('flex')
     } else {
         navbar.classList.remove('bg-white')
         navbar.classList.remove('shadow-md');
         navbar.classList.add('text-white')
+        navIcon2.classList.add('hidden')
+        navIcon1.classList.remove('hidden')
     }
 }
 function openNav() {
