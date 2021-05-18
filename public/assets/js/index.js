@@ -67,8 +67,7 @@ $(window).ready(function() {
     });
 })
 
-var clients = [
-    './assets/image/clients/deloitte.jpg',         
+var clients = [    
     './assets/image/clients/rajaherbal.jpg',         
     './assets/image/clients/mira.jpg',         
     './assets/image/clients/tokogampang.jpg',         
